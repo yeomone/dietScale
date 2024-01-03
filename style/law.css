@@ -1,0 +1,54 @@
+body {background-color: #f5f6f7;}
+header {text-align: right;}
+header #lang {width: 97px; height: 33px; text-align: center;} 
+header #lang option {}
+header h1 {text-align: center; padding: 40px 0;}
+header h1 a {}
+header h1 a img {width: 237px;}
+main {}
+main .joinFrm {}
+main .joinFrm fieldset {
+    border: none; width: 460px; margin: 0 auto;
+}
+main .joinFrm fieldset legend {display: none;}
+main .joinFrm fieldset p {margin-bottom: 30px;}
+main .joinFrm fieldset p #chk1 {}
+main .joinFrm fieldset p label {font-size: 0.875rem; font-weight: bold;}
+main .joinFrm fieldset dl {}
+main .joinFrm fieldset dl dt {margin-bottom: 20px;}
+main .joinFrm fieldset dl .info {display: flex; justify-content: space-between;}
+main .joinFrm fieldset dl .info > a {
+    color: #08a600; background-color: #fff;
+    border: 1px solid #08a600; padding: 5px;
+    font-size: 0.75rem;
+}
+main .joinFrm fieldset dl dt label {font-weight: bold;}
+main .joinFrm fieldset dl dt label em {color: #08a600;}
+main .joinFrm fieldset dl dt:nth-child(5) label em {color: #aaa;}
+main .joinFrm fieldset dl dd {
+    border: 1px solid #ccc;
+    height: 88px; overflow: auto; background-color: #fff;
+    padding: 10px; margin-bottom: 20px;
+}
+main .joinFrm fieldset dl dd h2 {font-size: 0.813rem; font-weight: bold; margin-bottom: 5px;}
+main .joinFrm fieldset dl dd p {font-size: 0.75rem; line-height: 1.6;}
+main .joinFrm fieldset .submitBtn {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    margin-bottom: 20px;
+}
+main .joinFrm fieldset .submitBtn button {
+    border: none; width: calc(100% / 2 - 5px); padding: 19px 0; color: #fff;
+}
+main .joinFrm fieldset .submitBtn #reset {background-color: #08a600;}
+main .joinFrm fieldset .submitBtn a {
+    background-color: #8e8e8e; border: none; width: calc(100% / 2 - 5px); padding: 19px 0; color: #fff; text-align: center;
+}
+main .joinFrm fieldset .btm {
+    font-size: 0.75rem; text-align: center;
+}
+main .joinFrm fieldset .btm a {font-size: 0.75rem;}
+footer {text-align: center; margin-top: 30px;}
+footer .link {margin-bottom: 7px;}
+footer .link a {font-size: 0.75rem;}
+footer address {font-size: 0.75rem;}
