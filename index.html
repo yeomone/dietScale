@@ -6,31 +6,87 @@
     <title>체중계</title>
     <link rel="stylesheet" href="./style/reset.css">
     <style>
-        h1 {font-size: 2rem; font-weight: bold; padding-bottom: 20px;}
-        p {font-size: 0.875rem; padding-bottom: 30px; border-bottom: 1px dashed pink; width: 240px;}
-        ul {padding-top: 20px;}
-        ul li {padding: 10px 0;}
-        ul li input {border: none;}
-        ul li #height {width: 30px;}
-        ul li #weight {width: 30px;}
-        ul li #goals {width: 350px;}
-        #result {
-            margin-top: 20px;
-            border: none; background-color: pink;
-            color: #fff; padding: 10px 10px;
-            font-weight: bold; font-size: 0.875rem;
+        main {
+            width: 500px; height: 500px;
+            margin: 0 auto;
+        }
+        main .contents {
+            margin: auto;
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            border: 2px dashed pink;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        main h1 {
+            font-size: 2rem; font-weight: bold; padding-bottom: 20px;
+        }
+        main .contents p {margin-bottom: 20px;}
+        main .contents ul {}
+        main .contents ul li {}
+        main .contents ul li div  {
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 0 auto;
+        }
+        main .contents ul li div div {border: 1px solid #fff;}
+        main .contents ul li div div p {width: 100px; text-align: right;}
+        main .contents ul li div div p em {
+            text-align: center;
+            background-color: pink;
+            color: #fff;
+            width: 100px;
+            display: block;
+            padding: 5px 5px;
+        }
+        main .contents ul li div div p input {
+            border: none;
+            width: 50px;
+            text-align: right;
+        }
+        main .contents ul li div div p #height {}
+        main .contents ul li div div p #weight {}
+        main .contents ul li div div p #goals_weight {}
+        main .contents ul li #goals {
+            width: 325px;
+            border: none;
+            height: 50px;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+        main .contents #result {
+            width: 325px;
+            background-color: pink;
+            border: none; color: #fff;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>다이어트 체중계</h1>
-    <p>당신의 건강몸무게를 알아보세요!</p>
-    <ul>
-        <li>현재 키 : <input type="text" id="height">cm</li>
-        <li>현재 몸무게 : <input type="text" id="weight">kg</li>
-        <li>최종 목표 : <input type="text" id="goals" readonly></li>
-    </ul>
-    <button type="button" id="result">결과보기</button>
+    <main>
+        <div class="contents">
+            <h1>다이어트 체중계</h1>
+            <p>당신의 건강몸무게를 알아보세요!</p>
+            <ul>
+                <li>
+                    <div>
+                        <div>
+                            <p><em>현재 키</em><br><input type="text" id="height"> cm</p>
+                        </div>
+                        <div>
+                            <p><em>현재 몸무게</em><br><input type="text" id="weight"> kg</p>
+                        </div>
+                        <div>
+                            <p><em>적정 몸무게</em><br><input type="text" id="goals_weight" readonly> kg</p>
+                        </div>
+                    </div>
+                </li>
+                <li><input type="text" id="goals"></li>
+            </ul>
+            <button type="button" id="result">결과보기</button>
+        </div>
+    </main>
     <script src="./script/as0103.js"></script>
 </body>
 </html>
